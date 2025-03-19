@@ -5,7 +5,7 @@ public class CalendarioCorsoTest {
         CalendarioCorso mioCalendarioCorso = new CalendarioCorso();
 
         mioCalendarioCorso.mese = "maggio";
-        mioCalendarioCorso.giorno = 24;
+        mioCalendarioCorso.giorno = 2;
         mioCalendarioCorso.moduloPerData();
         mioCalendarioCorso.date();
     }

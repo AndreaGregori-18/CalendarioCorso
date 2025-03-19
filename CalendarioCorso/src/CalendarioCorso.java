@@ -46,49 +46,28 @@ public class CalendarioCorso {
     }
 
     public void moduloPerData() {
-        if(mese.equals("gennaio") && giorno >= 1 && giorno <= 31 ) {
+        if(mese.equals("gennaio") && giorno >= 1 && giorno <= 31 || mese.equals("febbraio") && giorno >= 1 && giorno <= 12 ) {
             System.out.println("Corso non ancora avviato");
 
-        } else if (mese.equals("febbraio") && giorno >= 1 && giorno <= 12) {
-            System.out.println("Corso non ancora avviato");
-
-        } else if (mese.equals("febbraio") && giorno >= 13 && giorno <= 28) {
-            System.out.println("Web");
-
-        } else if (mese.equals("marzo") && giorno >= 1 && giorno <= 4) {
+        } else if (mese.equals("febbraio") && giorno >= 13 && giorno <= 28 || mese.equals("marzo") && giorno >= 1 && giorno <= 4) {
             System.out.println("Web");
 
         } else if (mese.equals("marzo") && giorno == 5) {
             System.out.println("DASA");
 
-        } else if (mese.equals("marzo") && giorno >= 6 && giorno <= 10) {
+        } else if (mese.equals("marzo") && giorno >= 6 && giorno <= 10 || mese.equals("marzo") && giorno >= 12 && giorno <= 31 || mese.equals("aprile") && giorno >= 1 && giorno <= 8) {
             System.out.println("Java");
 
         } else if (mese.equals("marzo") && giorno == 11) {
             System.out.println("GitHub");
 
-        } else if (mese.equals("marzo") && giorno >= 12 && giorno <= 31) {
-            System.out.println("Java");
-
-        } else if (mese.equals("aprile") && giorno >= 1 && giorno <= 8) {
-            System.out.println("Java");
-
         } else if (mese.equals("aprile") && giorno >= 9 && giorno <= 17) {
             System.out.println("Database");
 
-        } else if (mese.equals("aprile") && giorno >= 18 && giorno <= 20) {
+        } else if (mese.equals("aprile") && giorno >= 18 && giorno <= 20 || mese.equals("aprile") && giorno >= 22 && giorno <= 23) {
             System.out.println("JDBC");
 
-        } else if (mese.equals("aprile") && giorno >= 22 && giorno <= 23) {
-            System.out.println("JDBC");
-
-        } else if (mese.equals("aprile") && giorno == 24) {
-            System.out.println("Spring");
-
-        } else if (mese.equals("aprile") && giorno >= 26 && giorno <= 30) {
-            System.out.println("Spring");
-
-        } else if (mese.equals("maggio") && giorno >= 1 && giorno <= 8) {
+        } else if (mese.equals("aprile") && giorno == 24 || mese.equals("aprile") && giorno >= 26 && giorno <= 30 || mese.equals("maggio") && giorno >= 2 && giorno <= 8) {
             System.out.println("Spring");
 
         } else if (mese.equals("maggio") && giorno >= 9 && giorno <= 21) {
@@ -97,10 +76,7 @@ public class CalendarioCorso {
         } else if (mese.equals("maggio") && giorno >= 22 && giorno <= 30) {
             System.out.println("Corso terminato");
 
-        } else if (mese.equals("aprile") && giorno == 21 || giorno == 25) {
-            System.out.println("Festivo");
-
-        } else if (mese.equals("maggio") && giorno == 1) {
+        } else if (mese.equals("aprile") && giorno == 21 || giorno == 25 || mese.equals("maggio") && giorno == 1) {
             System.out.println("Festivo");
 
         }
